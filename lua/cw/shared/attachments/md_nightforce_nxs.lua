@@ -111,11 +111,6 @@ if CLIENT then
 				surface.SetDrawColor(255, 255, 255, 255)
 				surface.SetTexture(reticle)
 				surface.DrawTexturedRect(0, 0, size, size)
-				
-				if alpha < 1 then
-					self:drawLensShadow(size, size)
-				end
-				
 				surface.SetDrawColor(150 * light[1], 150 * light[2], 150 * light[3], 255 * alpha)
 				surface.SetTexture(lens)
 				surface.DrawTexturedRectRotated(size * 0.5, size * 0.5, size, size, 90)
