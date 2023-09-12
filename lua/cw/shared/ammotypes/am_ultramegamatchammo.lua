@@ -8,10 +8,6 @@ att.statModifiers = {AimSpreadMult = -0.99}
 if CLIENT then
 	att.displayIcon = surface.GetTextureID("atts/matchgradeammo")
 	att.description = {
-		{t = "ur gay lol", c = CustomizableWeaponry.textColors.VNEGATIVE},
-		{t = "i kiss you on the lips", c = CustomizableWeaponry.textColors.VPOSITIVE},
-		{t = "i love you", c = CustomizableWeaponry.textColors.VPOSITIVE},
-		{t = "oh god im gonna cum", c = CustomizableWeaponry.textColors.VPOSITIVE},
 		{t = "hello buy Intravenous :)", c = CustomizableWeaponry.textColors.VPOSITIVE},
 	}
 end
