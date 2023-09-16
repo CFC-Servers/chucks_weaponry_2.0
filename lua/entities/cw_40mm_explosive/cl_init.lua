@@ -1,15 +1,15 @@
 include("shared.lua")
 
-function ENT:Initialize()
-	self.Emitter = ParticleEmitter(self:GetPos())
-	self.ParticleDelay = 0
-end
-
 function ENT:Draw()
 	self:DrawModel()
 end
 
 function ENT:Think()
+	if not self.Emitter then
+		self.Emitter = ParticleEmitter(self:GetPos())
+		self.ParticleDelay = 0
+	end
+
 	if not self.dt.Misfire then
 		local part = self.Emitter:Add("particle/smokesprites_000" .. math.random(1, 9), self:GetPos())
 		part:SetStartSize(12)
