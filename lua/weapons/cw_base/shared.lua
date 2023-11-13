@@ -373,6 +373,9 @@ local invalidPlayerBusyProneFunction = function(self)
 end
 
 function SWEP:Initialize()
+	self.DrawCrosshair = true
+	self.AimSwayIntensity = 0
+	self.ViewModelMovementScale = 0
 	self:SetHoldType(self.NormalHoldType)
 	self:setupBallisticsInformation()
 	self:CalculateEffectiveRange()
