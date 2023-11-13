@@ -138,7 +138,7 @@ function SWEP:FireBullet(damage, cone, clumpSpread, bullets)
 						bul.Src = trace.HitPos
 						bul.Dir = Dir2
 						bul.Spread 	= Vec0
-						bul.Tracer	= 3
+						bul.Tracer	= 0
 						bul.Force	= damage * 0.225
 						bul.Damage = bul.Damage * 0.75
 						
