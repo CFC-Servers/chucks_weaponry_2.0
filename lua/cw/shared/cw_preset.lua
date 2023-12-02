@@ -21,8 +21,13 @@ if CustomizableWeaponry.preset.enabled and SERVER then
 	net.Receive(CustomizableWeaponry.preset.networkString, function(len, ply)
 		-- read and decode the received string
 		local name_sv = net.ReadString()
+		if not name_sv then return end
+
 		local data = net.ReadString()
+		if not data then return end
+
 		data = util.JSONToTable(data)
+		if not data then return end
 
 		local wep = ply:GetActiveWeapon()
 
