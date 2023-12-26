@@ -1648,7 +1648,9 @@ function SWEP:DrawWorldModel()
 		wm = self.WMEnt
 		
 		if IsValid(wm) then
-			local hand = IsValid(self.Owner) and self.Owner:LookupBone("ValveBiped.Bip01_R_Hand")
+			local owner = self:GetOwner()
+			local hand = IsValid(owner) and owner:LookupBone("ValveBiped.Bip01_R_Hand")
+
 			if hand then
 				pos, ang = GetBonePosition(self.Owner, hand)
 				
