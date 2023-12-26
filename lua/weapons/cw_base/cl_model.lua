@@ -1652,7 +1652,8 @@ function SWEP:DrawWorldModel()
 			local hand = IsValid(owner) and owner:LookupBone("ValveBiped.Bip01_R_Hand")
 
 			if hand then
-				pos, ang = GetBonePosition(self.Owner, hand)
+				pos, ang = GetBonePosition(owner, hand)
+
 				
 				if pos and ang then
 					RotateAroundAxis(ang, Right(ang), self.WMAng[1])
