@@ -20,7 +20,8 @@ local function CW_HUDShouldDraw( n )
     if not ply:Alive() then return end
 
     local currentWeapon = ply:GetActiveWeapon()
-    if not currentWeapon:GetTable().CW20Weapon then return end
+    local wepTable = currentWeapon:GetTable()
+    if not wepTable or not wepTable.CW20Weapon then return end
 
     if ammoEnabled and noDrawAmmo[n] then
         return false
