@@ -17,6 +17,7 @@ local function CW_HUDShouldDraw( n )
     if not hudEnabled and not ammoEnabled then return end
 
     local ply = LocalPlayer()
+    if ply == NULL then return end
     if not ply:Alive() then return end
 
     local currentWeapon = ply:GetActiveWeapon()
