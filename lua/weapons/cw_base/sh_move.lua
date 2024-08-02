@@ -6,7 +6,6 @@ local GetWalkSpeed = reg.Player.GetWalkSpeed
 local GetCrouchedWalkSpeed = reg.Player.GetCrouchedWalkSpeed
 local Crouching = reg.Player.Crouching
 
-local wep
 
 function CW_StartCommand(ply, ucmd)
 	local wep = GetActiveWeapon(ply)
