@@ -8,32 +8,6 @@ local Crouching = reg.Player.Crouching
 
 local wep
 
-function CW_Move(ply, m)
-	if Crouching(ply) then
-		wep = GetActiveWeapon(ply)
-		
-		if IsValid(wep) and wep.CW20Weapon then
-			if wep.dt and wep.dt.State == CW_AIMING then
-				m:SetMaxSpeed((GetWalkSpeed(ply) * GetCrouchedWalkSpeed(ply) - wep.SpeedDec * 0.5))
-			end
-		end
-	else
-		wep = GetActiveWeapon(ply)
-		
-		if IsValid(wep) and wep.CW20Weapon then
-			if wep.dt and wep.dt.State == CW_AIMING then
-				m:SetMaxSpeed((GetWalkSpeed(ply) - wep.SpeedDec) * 0.75)
-			else
-				m:SetMaxSpeed(GetRunSpeed(ply) - wep.SpeedDec)
-			end
-		else
-			m:SetMaxSpeed(GetRunSpeed(ply))
-		end
-	end
-end
-
-hook.Add("Move", "CW_Move", CW_Move)
-
 function CW_StartCommand(ply, ucmd)
 	local wep = GetActiveWeapon(ply)
 	
