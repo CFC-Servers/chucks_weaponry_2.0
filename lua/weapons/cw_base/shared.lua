@@ -58,10 +58,6 @@ SWEP.M203Anims = {idle_to_ready = "Idle2Fire",
 ready_to_idle = "Fire2Idle",
 reload = "reload"}
 
-if SERVER then
-	include("sv_filestodownload.lua")
-end
-
 AddCSLuaFile()
 AddCSLuaFile("sh_bullets.lua")
 AddCSLuaFile("cl_model.lua")
