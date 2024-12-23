@@ -105,7 +105,7 @@ function CustomizableWeaponry.grenadeTypes:setTo(target, network)
 	if network then
 		net.Start("CW20_GRENADETYPE")
 			net.WriteUInt(self.Grenade40MM, 8)
-		net.End(self.Owner)
+		net.Send(self.Owner)
 	end
 end
 
