@@ -390,7 +390,7 @@ if CLIENT then
 		
 		if wep:_attach(category, pos) then
 			if wep:canPlayCustomizeSound() and CurTime() > wep.AttachSoundDelay then
-				surface.PlaySound("cw/attach.wav")
+				surface.PlaySound("cw/attach.ogg")
 				wep.AttachSoundDelay = CurTime() + FrameTime() * 3
 			end
 		end
@@ -419,7 +419,7 @@ if CLIENT then
 		
 		if CustomizableWeaponry.playSoundsOnInteract then
 			if wep:canPlayCustomizeSound() and CurTime() > wep.AttachSoundDelay then
-				surface.PlaySound("cw/detach.wav")
+				surface.PlaySound("cw/detach.ogg")
 				wep.AttachSoundDelay = CurTime() + FrameTime() * 3
 			end
 		end
@@ -459,7 +459,7 @@ if CLIENT then
 	
 	local function CW20_PRESETDETACH()
 		if CustomizableWeaponry.playSoundsOnInteract then
-			surface.PlaySound("cw/detach.wav")
+			surface.PlaySound("cw/detach.ogg")
 		end
 	end
 	

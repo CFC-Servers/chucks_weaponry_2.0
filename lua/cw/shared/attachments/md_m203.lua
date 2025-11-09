@@ -26,9 +26,9 @@ end
 
 CustomizableWeaponry:registerAttachment(att)
 
-CustomizableWeaponry:addReloadSound("CW_M203_OPEN", "weapons/cw_m203/open.wav")
-CustomizableWeaponry:addReloadSound("CW_M203_CLOSE", "weapons/cw_m203/close.wav")
-CustomizableWeaponry:addReloadSound("CW_M203_REMOVE", "weapons/cw_m203/remove.wav")
-CustomizableWeaponry:addReloadSound("CW_M203_INSERT", "weapons/cw_m203/insert.wav")
-CustomizableWeaponry:addFireSound("CW_M203_FIRE", "weapons/cw_m203/fire.wav", 1, 100, CHAN_STATIC)
-CustomizableWeaponry:addFireSound("CW_M203_FIRE_BUCK", "weapons/cw_m203/fire_buck.wav", 1, 110, CHAN_STATIC)
+CustomizableWeaponry:addReloadSound("CW_M203_OPEN", "weapons/cw_m203/open.ogg")
+CustomizableWeaponry:addReloadSound("CW_M203_CLOSE", "weapons/cw_m203/close.ogg")
+CustomizableWeaponry:addReloadSound("CW_M203_REMOVE", "weapons/cw_m203/remove.ogg")
+CustomizableWeaponry:addReloadSound("CW_M203_INSERT", "weapons/cw_m203/insert.ogg")
+CustomizableWeaponry:addFireSound("CW_M203_FIRE", "weapons/cw_m203/fire.ogg", 1, 100, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("CW_M203_FIRE_BUCK", "weapons/cw_m203/fire_buck.ogg", 1, 110, CHAN_STATIC)
