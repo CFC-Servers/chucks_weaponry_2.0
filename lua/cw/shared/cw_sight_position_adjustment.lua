@@ -312,5 +312,5 @@ if CLIENT then
 		wep.HUDColors.green.a = 255
 	end
 	
-	CustomizableWeaponry:addRegularSound("CW_ADJUST_SIGHT_POSITION", {"cw/switch1.wav", "cw/switch2.wav", "cw/switch3.wav"}) -- we only need this sound on the client
+	CustomizableWeaponry:addRegularSound("CW_ADJUST_SIGHT_POSITION", {"cw/switch1.ogg", "cw/switch2.ogg", "cw/switch3.ogg"}) -- we only need this sound on the client
 end
